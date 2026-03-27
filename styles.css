@@ -1,5 +1,41 @@
-.navbar { /* Navbar styles */ }
-.hero { /* Hero section styles */ }
-.rules-grid { /* Rules grid styles */ }
-.staff-section { /* Staff section styles */ }
-@media (max-width: 768px) { /* Responsive design styles */ }
+.navbar {
+    background-color: #004E89;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #FF6B35;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero {
+    background-color: #1A1A1A;
+    color: #F5F5F5;
+    padding: 50px;
+    text-align: center;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #F5F5F5;
+    border: 1px solid #004E89;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
